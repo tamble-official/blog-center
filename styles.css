@@ -733,3 +733,8 @@ h1, h2, h3, .page-head h1, .brand-name, .q-title { font-family: var(--head); let
   .auth-card { border: 1px solid var(--border); }
 }
 
+
+/* 메뉴가 화면보다 길면 메뉴 안에서 스크롤 (노트북 화면에서 아래 메뉴·로그아웃이 잘려 눌리지 않던 문제, 11/19) */
+.sidebar .nav { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin-right: -8px; padding-right: 8px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.18) transparent; }
+.sidebar .nav::-webkit-scrollbar { width: 6px; } .sidebar .nav::-webkit-scrollbar-thumb { background: rgba(255,255,255,.18); border-radius: 3px; }
+.sidebar .side-foot { flex: none; }
