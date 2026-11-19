@@ -811,3 +811,12 @@ h1, h2, h3, .page-head h1, .brand-name, .q-title { font-family: var(--head); let
   .cat-steps > div:nth-child(n+3) { border-top: 1px solid var(--border); }
   .credit-pill > span { display: none; }
 }
+
+/* 관리자가 올린 로고·아이콘 이미지 */
+.ic-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.brand-mark .ic-img { border-radius: 26%; }
+.icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.icon-cell { border: 1px solid var(--border); border-radius: 14px; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+.icon-cell b { font-size: 13.5px; }
+.icon-prev { height: 52px; display: grid; place-items: center; }
+.icon-prev .brand-txt { display: none; }
